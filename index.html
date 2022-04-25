@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div>
+      <h1 id ="title">Microverse Survey</h1>
+      <p id = "description">Fill with your data</p>
+    </div>
+
+    <form id ="survey-form">
+
+ 
+          <label id ="name-label">Name</label>
+          <input placeholder="Enter your name" id="name"  type ="text" name="name" required>
+ 
+
+          <label id ="lastName-label">Last name</label>
+          <input placeholder="Enter your last name" type ="text" name="lastName" id="lastName">
+
+
+
+          <label id="email-label">Email</label>
+          <input  placeholder ="Enter your email" id="email" type="email" name="email" required>
+
+
+      <div>
+        <label id="number-label">Number</label>
+        <input placeholder="Enter a number between 1 and 10" min = "1" max ="10" type="number" name="number" id="number">
+      </div>
+
+      <div>
+        <label id="dropdown-label">Select an option</label>
+        <select id ="dropdown">
+          <option value ="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+        </select>
+      </div>
+    
+      <div>
+        <label id="gender-label">Select your gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label id="genderMale">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label id="genderFemale">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label id="genderOther">Other</label>
+      </div>
+
+      <div>
+        <label id="fruit-label">Select your fruit</label>
+        <input type="checkbox" name="fruitAvocado" value="avocado" id="avocado">
+        <label id="fruitAvocado">Avocado</label>
+        <input type="checkbox" name="fruitApple" value="apple" id="apple">
+        <label id="fruitApple">Apple</label>
+        <input type="checkbox" name="fruitPeach" value="peach" id="peach">
+        <label id="fruitPeach">Peach</label>
+        <input type="checkbox" name="fruitGrape" value="grape" id="grape">
+        <label id="fruitGrape">Grape</label>
+      </div>
+
+      <div>
+        <textarea placeholder="Enter some additional information" name="additionalText"></textarea>
+      </div>
+
+      <div>
+      <button id="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  
+    <script  src="js/index.js"></script>
+  </body>
+</html>
